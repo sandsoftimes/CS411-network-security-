@@ -1,0 +1,283 @@
+	786!!!
+
+Art of ware teaches us not to rely on the likelihood of the enemy not comming but we should be prepared anytime to face him
+
+Background:
+
+	-information security faced rapid changes
+	
+Computer Security:
+
+	-generic name for the collection of tools designed to protect data and to thawrt hackers
+	
+Network Security:
+
+	-Measures to protect data during their transmission
+	
+Internet Security:
+
+	-measure to protect data during transmission  over collection of interconnected networks
+	
+We are focusing on internet security in this course mainly
+
+Attacks:
+
+	-security attack:any action that compromises the security 
+	
+		-wide range of attacks
+	
+	-security mechanism:is to detect recover and prevent security attack
+	
+		-cryptographic techniques are used
+	
+	-security service:security of data processings
+	
+		-enchancing the security of data processing and information transfer of an organization
+		
+Security Services(X.800)
+
+	-Authentication: assurance that the communicating entity is the one claimed
+	
+	-Access Control: prevention of unauthorized access
+	
+	-Data Confidentiality: protection of data
+	
+	-data integrity: assurance that data is recievd by authorized entity 
+	
+	-Non-Repudation: Protection against denial
+	
+Security Mechanism:
+
+	-Specific security mechanism:
+	
+		-digital signatrues
+		
+		-data integrity
+		
+		-authetication
+	
+	-pervasive security mechanism:
+	
+		-security audit
+		
+		-event detection
+		
+		-security recovery
+		
+Attacks:
+
+	-passive attacks:
+	
+		-obtain message contents 
+		
+		-monitor traffic flows
+	
+	-active attacks:
+	
+		-reply previous message
+		
+		-modify mesage
+		
+		-denial of service
+		
+Model for Network Security:
+
+	-Sender
+	
+	-Information channel
+	
+	-Recipent
+	
+Symmetric Encryption:
+
+	-Symetric/Public key encrpytion
+	
+	-all classical algorithms
+
+Basic Terminologies:
+	
+	-plain text: orignal msg
+	
+	-cipher text: coded msg
+	
+	-cipher: algorithm used for plain to cipher encryption
+	
+	-key: info used in encryption
+	
+	-encipher: converting plaintxt to cipher txt
+	
+	-decipher: recovring ciphertext from plain txt
+	
+	-cryptography: study of encryption methods
+	
+	-cryptanalysis: Code breaking, analysis of encryption algorithms
+	
+	-cryptology: cryptography + crypt ananlysis
+	
+Types of Cryptanalytic Attacks:
+
+	-ciphertext only:identify plaintext using ciphertxt
+	
+	-known plaintext: attack cipher using plaintext
+	
+	-choosen plaintext:select plaintext and obtain cipher text to attack cipher
+	
+	-choosen ciphertext: select ciphertxt and obtain plaintxt to attack cipher
+	
+	-choosen text: select plaintext/ciphertxt to encrpyt/decrpyt to attack cipher
+
+Brute Force Search:
+
+	-Try every key
+	
+	-most basic attack 
+	
+	-propotional to keysize
+	
+Unconditional security:
+
+	-cipher cannot be broken since ciphertext provide insufficient information
+	
+Computational Security:
+
+	-given limited resources, the cipher cannot be broken
+	
+Substitution Cipher:
+
+	-Cesar Cipher
+	
+	-Monoalphabatic Cipher
+	
+	-Playfair cipher(playfair key matrix)
+	
+	-polyalphabetic cipher
+	
+	-vigenere cipher
+	
+	-autokey cipher
+	
+	-one time pad
+	
+	-transposition ciphers
+	
+	-rail fence cipher
+	
+	-row transposition ciphers
+	
+	-product ciphers
+	
+	-rotor machines
+
+Steganorgraphy
+
+	-alternative to encryption
+	
+	-hides existence of message
+	
+Block vs Stream Ciphers:
+
+	-block cipher process msg as a block 
+	
+	-each block is encrypted or decrpyted
+	
+	-stream ciphers process msg a bit or byte at a time
+	
+	-each bit is crypted/decrypted
+	
+	-Fiestel Cipher is an example of block cipher
+	
+Confusion vs Diffusion:
+
+Feistel Cipher: Cipher based on block cipher
+
+	-block size:increasing size improve security but slower cipher
+	
+	-key size:increasing size improve security (2 power 64) but slower cipher
+	
+	-number of rounds:increasing round impreove security but slower cipher
+	
+	-subkey generation: GRATER complexity make it more secure but slowr cipher
+	
+	-round function: greater complexity make analysis easier but slowr cipher
+	
+	-fast encryption/descryption
+	
+DES(Data Encrpytion Stand): mostly used block cipher
+
+	-encrpyts 64 bit key using 56 bit key
+	
+Avalanche Effect of DES
+
+Advanced Encryption Standarad (AES) aka Rijndael Cipher:
+
+Blowfish: A symmetric block cipher
+	
+	-fast implementation
+	
+	-compact use in memory 
+	
+	-simple structure eases analysis/implementation
+	
+	-variable security by varying key size
+	
+	-use 32 to 448 bit key
+	
+	-Use addition and XOR for its operation
+	
+RC5
+
+Stream Cipher:
+
+	-process the message bit by bit (as stream)
+	
+	-mostly have random stream key
+	
+	-XOR with plain text bit by bit
+	
+	-must never reuse stream key
+	
+Stream Cipher Properties:
+
+	-long period with no repitions
+	
+	-statistically random
+	
+	-depends on large enough key
+	
+	-large linear complexity 
+	
+	-corelaton immunity 
+	
+	-confussion
+	
+	-diffusion
+	
+	-use of high non-linear boolean functions	
+	
+RC4 	
+
+Confidentiality using symmetric encryption:
+
+	-link encrpytion
+	
+	-end to end encryption
+	
+Random Numbers
+
+Pseudo Random Number Generators (PRNGs)
+
+	-algorithmic technique to create "random numbers"
+	
+	-although not truly random 
+	
+	-can pass many tests of randomness
+	
+Blum Blum Shub Generator 
+
+	-base on public key algorithms
+	
+	-unpredictable, passes next bit test
+	
+	-slow since large numbers must be used
+	
+	-too slow for cipher use, good for key generation

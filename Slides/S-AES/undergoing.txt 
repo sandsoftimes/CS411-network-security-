@@ -1,0 +1,46 @@
+word + key 
+
+10 round   
+
+every round     
+
+4 words key 
+
+4 words for every 10 rounds 
+
+initial 4 words as well 
+
+so 44 words 
+
+s box 
+
+shift rows 
+
+circular shift 
+
+mix columns
+
+add round key 
+
+round 10 is different 
+
+state array 
+
+progress in downward manner 
+
+add round key 
+
+state array is used for 4x4 cells 16 bytes 
+
+1 byte for each box 
+
+one column represents one word
+
+what happen in each round?
+
+overview of AES
+
+4x4 state matrix 
+
+subsitute bytes  
+
